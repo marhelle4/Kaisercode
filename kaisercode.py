@@ -1,18 +1,12 @@
 
-#lan0$ = [ABCDEFGHIJKLMNOPRSTWUYZ]
+lan0 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+lan1 = lan0 + lan0
 
-#lan1$ = [ABCDEFGHIJKLMNOPRSTUWYZ]
+print("Witaj w programie do kodowania wiadomosci wedlug szyfru Cezara")
+int krok = input ("Podaj twoj krok. max 26 ")
 
-#lan2$ = [AÄBCDEFGHIJKLMNOÖPRSTUÜWYZ]
+#if krok > 26:
+#    print ("Twoj krok jest za duzy. Ale sproboj jeszcze raz")
+#    krok = input ("Podaj twoj krok. max 26 ")
 
-#lan3$ = [ABCDEFGHIJKLMNOPRSTUWYZ]
-
-print ("Witaj w systemie do wprowadzanie i kodowania wiadomosci Szyf Cezara")
-
-#Zbieranie danych
-
-language = input ("Wybierz uzywany przez ciebie jezyk 0 - Polski 1 - Angielski 2 - Niemiecki")
-
-step = input ("Podaj wybrany krok ")
-
-#Kodowanie
+print(lan1[krok])
